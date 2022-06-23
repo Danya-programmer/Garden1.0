@@ -1,4 +1,32 @@
 .Notes{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-around;
+}
+.Page{
+    display: grid;
+    grid-template: min-content 1fr / 1fr;
+}
+.Input{
+    height: 30px;
+    width: 33%;
+    border: 1px solid #000000;
+    border-radius: 60px;
+    text-align: center;
+    margin: 15px;
+}
+.Input:active{
+    background: #F5F5F5;
+}
+.Input:hover{
+    background: #F5F5F5;
+}
+
+.Sort{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-flow: column wrap;
+    margin: 20px 0 10px 0;
+    text-align: center;
 }

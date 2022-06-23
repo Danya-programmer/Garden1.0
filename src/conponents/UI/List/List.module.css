@@ -1,0 +1,20 @@
+.Note{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 15px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.Title{
+    text-align: center;
+}
+.Photo{
+
+}
+.Content{
+    text-align: center;
+}
+.Price{
+    text-align: center;
+}

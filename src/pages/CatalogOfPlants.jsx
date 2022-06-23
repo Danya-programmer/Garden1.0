@@ -46,7 +46,7 @@ function Note() {
       axios({
           method: "GET",
           // url:"https://jsonplaceholder.typicode.com/posts",
-          url:"notes/",
+          url:"plants/",
         }).then((response)=>{
           const data = response.data
           setNewNotes(data)
@@ -59,24 +59,28 @@ function Note() {
         })}
 
   return (
-     <div className=''>
+     <div className='Page'>
         <Header/>
-
-         <div>
-             <MyInput
+        <section>
+         <div className={classes.Sort}>
+             <MyInput className={classes.Input}
                  value={searchQuery}
                  onChange={event => setSearchQuery(event.target.value)}
              placeholder='Поиск...'
              />
+             <div>
+            <p>Результаты поиска: Сортировать:</p>
              <MySelect
                 value={selectedSort}
                 onChange={SortNotes}
-                defaultValue='Сортировка'
+                defaultValue='выбрать'
                 options={[
                     {value: 'title', name: 'По названию'},
-                    {value: 'body', name: 'По описанию'},
+                    {value: 'price', name: 'По возрастанию цены'},
                 ]}
-            />
+             />
+             <hr/></div>
+
          </div>
          {sortedAndSearchedPosts.length ?
           <div className={classes.Notes}>{ sortedAndSearchedPosts && sortedAndSearchedPosts.map(note => <List
@@ -84,13 +88,13 @@ function Note() {
         id={note.id}
         title={note.title}
         content={note.content}
+        photo={note.image}
+        price={note.price}
         />
 
         )}</div> : <h2>Посты нет</h2>}
 
-
-
-
+        </section>
     </div>
 
   );

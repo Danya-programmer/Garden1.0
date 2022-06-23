@@ -13,7 +13,7 @@ const MainPage = () => {
             <main className={classes.main}>
                 <div className={classes.mainPart}>
                     <p className={classes.textOfMainPage}>Найти растение своей мечты!</p>
-                    <NavLink to='/gardenCatalog' className={classes.buttonOfMainPage}><p className={classes.textInButtonOfMainPage}>В каталог</p> </NavLink>                </div>
+                    <NavLink to='/gardenCatalog' className={classes.buttonOfMainPage}><p className={classes.textInButtonOfMainPage}>В каталог</p> </NavLink></div>
             </main>
         </div>
     );

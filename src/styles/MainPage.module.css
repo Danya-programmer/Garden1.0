@@ -1,7 +1,7 @@
 .mainPage {
      /*background-image: url(../img/background.png);*/
      display: grid;
-     grid-template: 120px 1fr / 1fr;
+     grid-template: min-content 1fr / 1fr;
      grid-template-areas: "header" "main";
 }
 
@@ -29,7 +29,7 @@
      margin: 110px 11% 0 0;
      width: 377px;
      height: 298px;
-     background: rgba(172, 233, 72, 0.74);
+     background: rgba(172, 233, 72, 0.64);
      border-radius: 70px;
      backdrop-filter: blur(3px);
      text-align: right;
@@ -66,4 +66,9 @@
 }
 .buttonOfMainPage:active{
      box-shadow: 4px 4px 4px 6px rgba(0, 0, 0, 0.35);
+}
+.buttonOfMainPage:hover{
+     background: rgba(70, 159, 29, 0.77);
+     box-shadow: 0px 0px 3px 10px rgba(46, 151, 9, 0.28);
+     border-radius: 100px;
 }
