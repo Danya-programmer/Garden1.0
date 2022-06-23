@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
 from .serializers import NoteSerializer
-from .models import Notes
+from .models import Plants
 # Create your views here.
 
 
@@ -18,7 +18,7 @@ def front(request):
 def note(request):
 
     if request.method == 'GET':
-        note = Notes.objects.all()
+        note = Plants.objects.all()
         serializer = NoteSerializer(note, many=True)
         return Response(serializer.data)
 
@@ -33,8 +33,8 @@ def note(request):
 @api_view(['DELETE'])
 def note_detail(request, pk):
     try:
-        note = Notes.objects.get(pk=pk)
-    except Notes.DoesNotExist:
+        note = Plants.objects.get(pk=pk)
+    except Plants.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
 
     if request.method == 'DELETE':
