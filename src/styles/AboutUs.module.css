@@ -1,0 +1,51 @@
+.AboutUsBody{
+
+}
+.AboutUs{
+    margin: 30px 100px 0 100px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+
+}
+
+.title{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 0px;
+text-align: center;
+color: #2CA800;
+}
+
+.photo{
+    width: 33%;
+}
+
+.photo2{
+    width: 30%;
+    margin: 120px 0 0 0;
+    position:absolute;
+
+}
+@media (max-width: 830px) {
+    .AboutUs{
+        margin: 30px;
+        display: flex;
+        flex-flow: column;
+        align-content: center;
+    }
+    .photo{
+        width: 90%;
+    }
+    .photo2{
+        width: 90%;
+        position: relative;
+        margin-top: 0;
+    }
+    .title{
+
+        font-size: 25px;
+    }
+}

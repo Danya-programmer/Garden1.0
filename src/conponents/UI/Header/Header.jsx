@@ -19,7 +19,6 @@ const Header = () => {
                 </div>
                 <div className={classes.navbar}>
                     <NavLink to='/gardenCatalog' className={ navData => navData.isActive ? classes.active : classes.navbar_link }>Каталог рассады</NavLink>
-                    <NavLink to='/cultivation' className={ navData => navData.isActive ? classes.active : classes.navbar_link }>Выращивание</NavLink>
                     <NavLink to='/ground' className={ navData => navData.isActive ? classes.active : classes.navbar_link }>Грунт</NavLink>
                     <NavLink to='/aboutUs' className={ navData => navData.isActive ? classes.active : classes.navbar_link }>О нас</NavLink>
                 </div>

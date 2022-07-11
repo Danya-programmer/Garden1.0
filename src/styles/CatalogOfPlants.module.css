@@ -9,11 +9,11 @@
 }
 .Input{
     height: 30px;
-    width: 33%;
+    width: 50%;
     border: 1px solid #000000;
     border-radius: 60px;
     text-align: center;
-    margin: 15px;
+    margin: 15px 0 15px 0;
 }
 .Input:active{
     background: #F5F5F5;
@@ -30,3 +30,4 @@
     margin: 20px 0 10px 0;
     text-align: center;
 }
+

@@ -1,13 +1,13 @@
 import React from 'react';
 import Header from "../conponents/UI/Header/Header";
 import classes from "../styles/MainPage.module.css"
-import background from "../img/background4.webp";
+import background from "../img/background4.jpg";
 import {NavLink} from "react-router-dom";
 const MainPage = () => {
 
     return (
         <div className={classes.mainPage}>
-            <img className={classes.backgrounImg} src={background} alt='error'/>
+            <img className={classes.backgroundImg} src={background} alt='error'/>
 
             <Header className={classes.header}/>
             <main className={classes.main}>
